@@ -1,0 +1,15 @@
+@import '../abstracts/variables';
+
+.section-about {
+  background-color: $color-gray-light-1;
+  padding: 25rem 18rem;
+  margin-top: -20vh;
+
+  &__row--two-columns {
+    @include flexTwoColumns;
+  }
+
+  &__column {
+    flex-basis: 50%;
+  }
+}
