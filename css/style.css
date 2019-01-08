@@ -53,7 +53,7 @@ body {
 }
 body {
   font-family: "Lato", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.7;
   color: #777;
 }
@@ -82,7 +82,6 @@ body {
   animation-timing-function: ease-in-out;
   margin-bottom: 5rem;
 }
-
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -93,13 +92,29 @@ body {
   background-clip: text;
   color: transparent;
 }
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 4rem;
+}
 
 .u-center-text {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
-  margin-bottom: 8rem;
+.u-margin-bottom-big {
+  margin-bottom: 10rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
 }
 
 .btn:link, .btn:visited {
@@ -143,6 +158,62 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
+}
+.btn-text:link, .btn-text:visited {
+  font-size: 1.7rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all 0.3s;
+}
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.15);
+}
+.btn-text:active {
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.composition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.composition__photo {
+  width: 60%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  position: absolute;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.composition__photo--p1 {
+  top: -4rem;
+  left: 4rem;
+  z-index: 1;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+  z-index: 2;
+}
+.composition__photo--p3 {
+  left: 15%;
+  top: 12rem;
+  z-index: 3;
+}
+.composition__photo:hover {
+  outline: 1.5rem solid #55c57a;
+  z-index: 5;
+  transform: scale(1.15);
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.8);
 }
 
 .header {
