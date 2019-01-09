@@ -32,11 +32,11 @@
     &:hover {
       outline: 1.5rem solid $color-primary;
       z-index: 5;
-      transform: scale(1.15);
+      transform: scale(1.075) translateY(-5px);
     }
   }
 
   &:hover &__photo:not(:hover) {
-    transform: scale(0.8);
+    transform: scale(0.95);
   }
 }

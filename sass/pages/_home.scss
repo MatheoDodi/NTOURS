@@ -13,3 +13,26 @@
     flex-basis: 50%;
   }
 }
+
+.section-features {
+  margin-top: -15rem;
+  padding: 30rem 18rem;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+
+  &__row-4-columns {
+    display: flex;
+
+    &--column {
+      &:not(:last-child) {
+        margin-right: 6rem;
+      }
+    }
+  }
+}
