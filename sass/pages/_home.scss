@@ -36,3 +36,15 @@
     }
   }
 }
+
+.section-tours {
+  padding: 30rem 18rem;
+
+  &__row-3-columns {
+    display: flex;
+
+    &--column {
+      flex-basis: 200px;
+    }
+  }
+}

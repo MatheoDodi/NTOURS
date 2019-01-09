@@ -117,6 +117,19 @@ body {
   margin-bottom: 2rem;
 }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+.card__side {
+  background-color: orangered;
+  height: 50rem;
+  transition: all 0.8s;
+}
+.card:hover .card__side {
+  transform: rotateY(180deg);
+}
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -286,6 +299,16 @@ body {
 }
 .section-features__row-4-columns--column:not(:last-child) {
   margin-right: 6rem;
+}
+
+.section-tours {
+  padding: 30rem 18rem;
+}
+.section-tours__row-3-columns {
+  display: flex;
+}
+.section-tours__row-3-columns--column {
+  flex-basis: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
