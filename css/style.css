@@ -118,16 +118,37 @@ body {
 }
 
 .card {
-  perspective: 150rem;
+  perspective: 200rem;
   -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
 }
 .card__side {
   background-color: orangered;
   height: 50rem;
-  transition: all 0.8s;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
-.card:hover .card__side {
+.card__side--front {
+  background-color: #fff;
+}
+.card__side--back {
   transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
 }
 
 .feature-box {
@@ -302,13 +323,15 @@ body {
 }
 
 .section-tours {
-  padding: 30rem 18rem;
+  padding: 10rem 18rem;
 }
 .section-tours__row-3-columns {
   display: flex;
+  justify-content: center;
 }
 .section-tours__row-3-columns--column {
   flex-basis: 200px;
+  margin: 0 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
