@@ -146,10 +146,10 @@ body {
   background: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 .card__side--back-2 {
-  background: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background: linear-gradient(to right bottom, #7ed56f, #55c57a);
 }
 .card__side--back-3 {
-  background: linear-gradient(to right bottom, #7ed56f, #55c57a);
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -168,10 +168,10 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
 }
 .card__picture--2 {
-  background-image: url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #55c57a), url(../img/nat-6.jpg);
 }
 .card__picture--3 {
-  background-image: url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -191,6 +191,12 @@ body {
 .card__heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
 }
+.card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(85, 197, 122, 0.85));
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
 .card__details {
   padding: 2rem;
 }
@@ -206,6 +212,25 @@ body {
 }
 .card ul li:not(:last-child) {
   border-bottom: 1px solid #dddddd;
+}
+.card__cta {
+  display: grid;
+  grid-row-gap: 6rem;
+  height: 100%;
+  justify-items: center;
+  align-content: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+}
+.card__price-only {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 .feature-box {
