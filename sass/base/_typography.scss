@@ -60,6 +60,14 @@ body {
   font-size: $default-font-size;
 
   &:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.test {
+  text-shadow: 0 3rem 3rem rgba($color-black, 0.08);
+
+  &-2 {
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
   }
 }
