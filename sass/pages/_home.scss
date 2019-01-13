@@ -40,7 +40,7 @@
 }
 
 .section-tours {
-  padding: 10rem 18rem;
+  padding: 20rem 18rem;
   background-color: $color-gray-light-1;
 
   &__row-3-columns {
@@ -57,4 +57,23 @@
 .section-stories {
   padding: 10rem 0;
   position: relative;
+
+  .overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba($color-gray-light-1, 1),
+      rgba($color-gray-light-1, 0)
+    );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .above {
+    position: relative;
+    z-index: 5;
+  }
 }
