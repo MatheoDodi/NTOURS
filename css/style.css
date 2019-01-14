@@ -518,6 +518,13 @@ body {
   background-color: #55c57a;
   opacity: 0;
 }
+.form__button {
+  margin-top: 3rem;
+}
+.form__button .btn {
+  background: #7ed56f;
+  color: #fff;
+}
 
 .header {
   height: 95vh;
@@ -613,7 +620,6 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem;
 }
 .book__form {
   width: 50%;

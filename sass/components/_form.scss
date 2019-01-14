@@ -98,4 +98,13 @@
       opacity: 0;
     }
   }
+
+  &__button {
+    margin-top: 3rem;
+
+    .btn {
+      background: $color-primary-light;
+      color: $color-white;
+    }
+  }
 }
