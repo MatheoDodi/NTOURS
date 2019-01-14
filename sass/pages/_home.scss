@@ -106,3 +106,17 @@
     padding: 6rem;
   }
 }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+
+  &__logo-box {
+    text-align: center;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+}

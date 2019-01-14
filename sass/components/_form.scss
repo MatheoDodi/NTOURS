@@ -11,15 +11,20 @@
     background-color: rgba($color-white, 0.7);
     border: none;
     font-family: inherit;
-    border-bottom: 3px solid transparent;
+    // border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
     transition: all 0.3s;
 
+    &::after {
+      content: '';
+      height: 1rem;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-      border-bottom: 3px solid $color-primary;
+      // border-bottom: 3px solid $color-primary;
     }
   }
 
