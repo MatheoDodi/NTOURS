@@ -17,8 +17,11 @@
     transition: all 0.3s;
 
     &::after {
-      content: '';
+      content: 'HAAAA';
       height: 1rem;
+      width: 1rem;
+      background-color: red;
+      display: block;
     }
 
     &:focus {
@@ -36,14 +39,11 @@
     margin-top: 0.7rem;
     display: block;
     transition: all 0.3s;
+    transform: translateY(-4.7rem);
   }
 
-  &__input:placeholder-shown + &__label {
-    transform: translateY(-4.8rem);
-  }
-
-  &__input.placeholder-shown + &__label {
-    transform: translateY(-4.8rem);
+  &__input:focus ~ &__label {
+    transform: translateY(0);
   }
 
   &__radio-group {
@@ -111,5 +111,16 @@
       background: $color-primary-light;
       color: $color-white;
     }
+  }
+
+  &__line {
+    background-color: $color-primary;
+    height: 5px;
+    width: 0;
+    transition: all 0.3s;
+  }
+
+  &__input:focus + &__line {
+    width: 90%;
   }
 }
