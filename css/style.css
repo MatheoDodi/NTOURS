@@ -581,6 +581,12 @@ body {
 .navigation__button:hover {
   cursor: pointer;
 }
+.navigation__button:hover > .navigation__icon::before {
+  transform: translateY(-3px);
+}
+.navigation__button:hover > .navigation__icon::after {
+  transform: translateY(3px);
+}
 .navigation__background {
   height: 6rem;
   width: 6rem;

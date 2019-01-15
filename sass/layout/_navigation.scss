@@ -22,6 +22,16 @@
     }
   }
 
+  &__button:hover > &__icon {
+    &::before {
+      transform: translateY(-3px);
+    }
+
+    &::after {
+      transform: translateY(3px);
+    }
+  }
+
   &__background {
     height: 6rem;
     width: 6rem;
