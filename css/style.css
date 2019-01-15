@@ -574,6 +574,12 @@ body {
   right: 6rem;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation__button:hover {
+  cursor: pointer;
 }
 .navigation__background {
   height: 6rem;
@@ -631,6 +637,39 @@ body {
   opacity: 1;
   width: 100%;
 }
+.navigation__icon {
+  position: relative;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 3rem;
+  height: 3px;
+  border-radius: 1px;
+  background: linear-gradient(to right, #7ed56f, #55c57a);
+  display: block;
+  transition: all 0.4s;
+}
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navigation__icon::before {
+  top: -1rem;
+}
+.navigation__icon::after {
+  top: 1rem;
+}
+.navigation__checkbox:checked + .navigation__button > .navigation__icon {
+  background: transparent;
+}
+.navigation__checkbox:checked + .navigation__button > .navigation__icon::before {
+  transform: rotate(225deg);
+  margin-top: 1rem;
+}
+.navigation__checkbox:checked + .navigation__button > .navigation__icon::after {
+  transform: rotate(-225deg);
+  margin-top: -1rem;
+}
 
 .section-about {
   background-color: #f7f7f7;
@@ -661,6 +700,7 @@ body {
 }
 
 .section-tours {
+  margin-top: -15rem;
   padding: 20rem 18rem;
   background-color: #f7f7f7;
 }
